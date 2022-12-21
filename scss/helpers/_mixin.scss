@@ -1,0 +1,20 @@
+@mixin flex_sbc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex_jcc {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin flex_jcsb {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flex_aic {
+  display: flex;
+  align-items: center;
+}

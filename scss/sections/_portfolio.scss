@@ -1,0 +1,80 @@
+.portfolio {
+  width: 100%;
+  padding: 120px 0;
+  .container {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto 80px;
+  }
+  .portfolio-gallery-chooses {
+    width: 98%;
+    margin: 0 auto;
+    .chooses-part {
+      background-image: url(https://ui-themez.smartinnovates.net/items/archo/img/line-pattern1.png);
+      text-align: center;
+      padding: 15px;
+      button {
+        font-weight: 600;
+        font-size: 13px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        position: relative;
+        margin: 0 20px;
+        cursor: pointer;
+        background-color: transparent;
+        border: 0;
+        &:not(:last-child) {
+          &::after {
+            content: "";
+            position: absolute;
+            right: -24px;
+            top: 5px;
+            width: 7px;
+            height: 7px;
+            background: $dust_orange;
+            border-radius: 50%;
+          }
+        }
+      }
+      .active {
+        color: $dust_orange;
+      }
+    }
+    .portfolio-gallery {
+      width: 100%;
+      @include flex_sbc();
+      margin: 0 auto;
+      .all {
+        width: calc(50vw - 40px);
+        padding: 12px;
+        margin-top: 50px;
+        a {
+          position: relative;
+          img {
+            width: calc(50vw - 40px);
+            height: 440px;
+          }
+        }
+        .portfolio-info {
+          background-image: url(https://ui-themez.smartinnovates.net/items/archo/img/line-pattern1.png);
+          background-size: contain;
+          font-family: "Poppins", sans-serif;
+          padding: 10px 20px;
+          margin-top: 10px;
+          h5 {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+            text-transform: uppercase;
+          }
+          span {
+            color: $light_grey1;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+          }
+        }
+      }
+    }
+  }
+}

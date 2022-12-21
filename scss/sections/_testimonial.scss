@@ -1,0 +1,100 @@
+.testimonial {
+  width: 100%;
+  @include flex_jcc();
+  padding: 120px 0;
+  .container {
+    width: 80%;
+    text-align: center;
+    .testimonial-cards {
+      width: 100%;
+      @include flex_jcsb();
+      padding-top: 15px;
+      .test-card {
+        width: 48%;
+        .quote {
+          padding: 50px 40px 40px;
+          border: 10px solid $white_pink;
+          border-top: 0;
+          position: relative;
+          .quote-icon {
+            position: absolute;
+            top: -20px;
+            right: 10%;
+            width: 52px;
+            img {
+              width: 52px;
+            }
+          }
+          p {
+            font-family: "Playfair Display", serif;
+            font-size: 18px;
+            font-weight: 400;
+            font-style: italic;
+            line-height: 2;
+            color: #333;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            height: 10px;
+            background: $white_pink;
+            top: 0;
+            width: 5%;
+            right: 0;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            height: 10px;
+            background: $white_pink;
+            top: 0;
+            width: 75%;
+            left: 0;
+          }
+        }
+        .test-info {
+          width: 100%;
+          @include flex_aic();
+          position: relative;
+          margin-top: 30px;
+          padding-left: 30px;
+          .client-img {
+            width: 70px;
+            height: 70px;
+            padding-right: 20px;
+            img {
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+          }
+          .client-info {
+            font-family: "Poppins", serif;
+            text-align: left;
+            h5 {
+              font-size: 16px;
+              font-weight: 600;
+              line-height: 1.4;
+            }
+            span {
+              font-size: 13px;
+              font-weight: 400;
+              color: $dust_orange;
+            }
+          }
+          &::after {
+            content: "";
+            width: 0;
+            height: 0;
+            border-top: 25px solid $white_pink;
+            border-right: 30px solid transparent;
+            position: absolute;
+            left: 100px;
+            top: -30px;
+          }
+        }
+      }
+    }
+  }
+}

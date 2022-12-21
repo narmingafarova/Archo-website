@@ -1,0 +1,17 @@
+.scroll {
+  button {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    background-color: transparent;
+    border: 1px solid $dust_orange;
+    border-radius: 50%;
+    cursor: pointer;
+    .fas {
+      color: $dust_orange;
+    }
+  }
+}

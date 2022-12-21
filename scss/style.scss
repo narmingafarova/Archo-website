@@ -1,0 +1,22 @@
+// Reseter
+@import "reset";
+
+// Helpers
+@import "helpers/var";
+@import "helpers/section_title";
+@import "helpers/scroll";
+
+// Sections
+@import "sections/header";
+@import "sections/initial";
+@import "sections/about";
+@import "sections/services";
+@import "sections/portfolio";
+@import "sections/skills";
+@import "sections/testimonial";
+@import "sections/blogs";
+@import "sections/footer";
+
+html {
+    scroll-behavior: smooth;
+}
